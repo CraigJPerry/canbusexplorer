@@ -17,6 +17,10 @@
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
 
+    <modules>
+        <module>canbusexplorer-integration-tests</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>
@@ -29,6 +33,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
