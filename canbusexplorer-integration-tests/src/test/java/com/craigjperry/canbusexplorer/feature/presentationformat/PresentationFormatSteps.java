@@ -1,5 +1,6 @@
 package com.craigjperry.canbusexplorer.feature.presentationformat;
 
+import com.craigjperry.canbusexplorer.Application;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -7,9 +8,16 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.fluentlenium.core.FluentAdapter;
 import org.fluentlenium.core.annotation.Page;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.springframework.boot.test.SpringApplicationContextLoader;
+import org.springframework.boot.test.WebIntegrationTest;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = Application.class, loader = SpringApplicationContextLoader.class)
+@WebIntegrationTest
 public class PresentationFormatSteps extends FluentAdapter {
 
     @Page
