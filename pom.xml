@@ -12,6 +12,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+        <version.canbusexplorer-server>1.0-SNAPSHOT</version.canbusexplorer-server>
         <version.compiler.plugin>3.3</version.compiler.plugin>
         <version.junit>4.12</version.junit>
         <version.cucumber>1.2.2</version.cucumber>
@@ -31,6 +32,11 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>com.craigjperry.canbusexplorer</groupId>
+                <artifactId>canbusexplorer-server</artifactId>
+                <version>${version.canbusexplorer-server}</version>
+            </dependency>
+            <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>${version.logback}</version>
@@ -43,6 +49,12 @@
                 <version>${version.springboot}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-boot</artifactId>
+                <version>${version.springboot}</version>
+                <scope>test</scope>
             </dependency>
 
             <dependency>
