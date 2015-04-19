@@ -8,14 +8,11 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.fluentlenium.core.FluentAdapter;
 import org.fluentlenium.core.annotation.Page;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.springframework.boot.test.SpringApplicationContextLoader;
 import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = Application.class, loader = SpringApplicationContextLoader.class)
 @WebIntegrationTest
 public class PresentationFormatSteps extends FluentAdapter {
@@ -36,11 +33,12 @@ public class PresentationFormatSteps extends FluentAdapter {
 
     @Given("^the app has been started$")
     public void the_app_has_been_started() throws Throwable {
-        appPage.go();
+        // Achieved by the spring @WebIntegrationTest annotation
     }
 
     @When("^I visit the application URL on my (\\w+)$")
     public void i_visit_the_application_URL_on_my(String deviceType) throws Throwable {
+        appPage.go();
         appPage.isAt();
     }
 
