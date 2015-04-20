@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -8,6 +8,29 @@
     <artifactId>canbusexplorer</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <description>A tool to assist in the capture and understanding, of traffic on Canbus networks.</description>
+    <url>https://github.com/CraigJPerry/canbusexplorer</url>
+    <inceptionYear>2015</inceptionYear>
+    <licenses>
+        <license>
+            <name>GNU General Public License (GPL)</name>
+            <url>http://www.gnu.org/licenses/gpl.html</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>CraigJPerry</id>
+            <name>Craig J Perry</name>
+            <email>craigp84@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/CraigJPerry/canbusexplorer.git</connection>
+        <developerConnection>scm:git:git@github.com/CraigJPerry/canbusexplorer.git</developerConnection>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

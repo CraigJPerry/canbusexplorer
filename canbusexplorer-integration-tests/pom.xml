@@ -13,6 +13,14 @@
     <artifactId>canbusexplorer-integration-tests</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- Maven site tries to extrapolate from the parent pom but gets it wrong -->
+    <description>Canbus Explorer integration test shippable artifact. Demonstrates the API for integrators.</description>
+    <url>${parent.url}</url>
+    <scm>
+        <connection>${parent.scm.connection}</connection>
+        <developerConnection>${parent.scm.developerConnection}</developerConnection>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>com.craigjperry.canbusexplorer</groupId>
