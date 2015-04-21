@@ -3,7 +3,7 @@ Canbus Explorer
 
 > Capture and understand the traffic on Canbus networks.
 
-See the documentation site: https://CraigJPerry.github.io/canbusexplorer/
+See the documentation site: https://CraigJPerry.github.io/canbusexplorer
 
 Deployment Overview
 -------------------
