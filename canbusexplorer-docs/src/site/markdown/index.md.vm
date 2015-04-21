@@ -1,0 +1,4 @@
+Markdown Maven Site
+===================
+
+Generated the web site for ${project.groupId}:${project.artifactId}:${project.version}.

@@ -43,14 +43,20 @@
         <version.springboot>1.2.3.RELEASE</version.springboot>
         <version.selenium>2.45.0</version.selenium>
         <version.fluentlenium>0.10.3</version.fluentlenium>
+        <version.maven-site-plugin>3.4</version.maven-site-plugin>
+        <version.site-maven-plugin>0.11</version.site-maven-plugin>
+        <version.doxia-module-markdown>1.6</version.doxia-module-markdown>
 
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
+
+        <github.global.server>github</github.global.server>
     </properties>
 
     <modules>
         <module>canbusexplorer-integration-tests</module>
         <module>canbusexplorer-server</module>
+        <module>canbusexplorer-docs</module>
     </modules>
 
     <dependencyManagement>
@@ -60,6 +66,7 @@
                 <artifactId>canbusexplorer-server</artifactId>
                 <version>${version.canbusexplorer-server}</version>
             </dependency>
+
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
