@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>canbusexplorer-integration-tests &#x2013; Dependency Information</title>
+    <title>canbusexplorer &#x2013; Dependency Information</title>
     <style type="text/css" media="all">
       @import url("./css/maven-base.css");
       @import url("./css/maven-theme.css");
@@ -17,7 +17,7 @@
   <body class="composite">
     <div id="banner">
                     <div id="bannerLeft">
-                canbusexplorer-integration-tests
+                canbusexplorer
                 </div>
                     <div class="clear">
         <hr/>
@@ -30,7 +30,7 @@
         <span id="publishDate">Last Published: 2015-04-21</span>
                   &nbsp;| <span id="projectVersion">Version: 1.0-SNAPSHOT</span>
                       </div>
-            <div class="xright">                    <a href="https://github.com/CraigJPerry/canbusexplorer/tree/master/canbusexplorer-integration-tests" class="externalLink" title="canbusexplorer-integration-tests">canbusexplorer-integration-tests</a>
+            <div class="xright">                    <a href="./" title="canbusexplorer">canbusexplorer</a>
               
                     
       </div>
@@ -42,19 +42,22 @@
       <div id="navcolumn">
              
                     
-                                <h5>Parent Project</h5>
+                                          <h5>Modules</h5>
                   <ul>
                   <li class="none">
-                          <a href="../index.html" title="canbusexplorer">canbusexplorer</a>
+                          <a href="../canbusexplorer-integration-tests/1.0-SNAPSHOT/index.html" title="Unnamed - com.craigjperry.canbusexplorer:canbusexplorer-integration-tests:jar:1.0-SNAPSHOT">Unnamed - com.craigjperry.canbusexplorer:canbusexplorer-integration-tests:jar:1.0-SNAPSHOT</a>
+            </li>
+                  <li class="none">
+                          <a href="../canbusexplorer-server/1.0-SNAPSHOT/index.html" title="Unnamed - com.craigjperry.canbusexplorer:canbusexplorer-server:jar:1.0-SNAPSHOT">Unnamed - com.craigjperry.canbusexplorer:canbusexplorer-server:jar:1.0-SNAPSHOT</a>
             </li>
           </ul>
                        <h5>Project Documentation</h5>
                   <ul>
-                                                                                                                                                                                                                              <li class="expanded">
+                                                                                                                                                                                                                                                                                    <li class="expanded">
                           <a href="project-info.html" title="Project Information">Project Information</a>
                     <ul>
                       <li class="none">
-                          <a href="dependencies.html" title="Dependencies">Dependencies</a>
+                          <a href="dependency-convergence.html" title="Dependency Convergence">Dependency Convergence</a>
             </li>
                       <li class="none">
             <strong>Dependency Information</strong>
@@ -63,10 +66,16 @@
                           <a href="dependency-management.html" title="Dependency Management">Dependency Management</a>
             </li>
                       <li class="none">
+                          <a href="distribution-management.html" title="Distribution Management">Distribution Management</a>
+            </li>
+                      <li class="none">
                           <a href="index.html" title="About">About</a>
             </li>
                       <li class="none">
                           <a href="license.html" title="Project License">Project License</a>
+            </li>
+                      <li class="none">
+                          <a href="modules.html" title="Project Modules">Project Modules</a>
             </li>
                       <li class="none">
                           <a href="plugin-management.html" title="Plugin Management">Plugin Management</a>
@@ -76,6 +85,9 @@
             </li>
                       <li class="none">
                           <a href="team-list.html" title="Project Team">Project Team</a>
+            </li>
+                      <li class="none">
+                          <a href="source-repository.html" title="Source Repository">Source Repository</a>
             </li>
                       <li class="none">
                           <a href="project-summary.html" title="Project Summary">Project Summary</a>
@@ -99,37 +111,38 @@
 <div class="source">
 <pre>&lt;dependency&gt;
   &lt;groupId&gt;com.craigjperry.canbusexplorer&lt;/groupId&gt;
-  &lt;artifactId&gt;canbusexplorer-integration-tests&lt;/artifactId&gt;
+  &lt;artifactId&gt;canbusexplorer&lt;/artifactId&gt;
   &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+  &lt;type&gt;pom&lt;/type&gt;
 &lt;/dependency&gt;</pre></div></div>
 <div class="section">
 <h3><a name="Apache_Buildr"></a>Apache Buildr</h3><a name="Apache_Buildr"></a>
 <div class="source">
-<pre>'com.craigjperry.canbusexplorer:canbusexplorer-integration-tests:jar:1.0-SNAPSHOT'</pre></div></div>
+<pre>'com.craigjperry.canbusexplorer:canbusexplorer:pom:1.0-SNAPSHOT'</pre></div></div>
 <div class="section">
 <h3><a name="Apache_Ivy"></a>Apache Ivy</h3><a name="Apache_Ivy"></a>
 <div class="source">
-<pre>&lt;dependency org=&quot;com.craigjperry.canbusexplorer&quot; name=&quot;canbusexplorer-integration-tests&quot; rev=&quot;1.0-SNAPSHOT&quot;&gt;
-  &lt;artifact name=&quot;canbusexplorer-integration-tests&quot; type=&quot;jar&quot; /&gt;
+<pre>&lt;dependency org=&quot;com.craigjperry.canbusexplorer&quot; name=&quot;canbusexplorer&quot; rev=&quot;1.0-SNAPSHOT&quot;&gt;
+  &lt;artifact name=&quot;canbusexplorer&quot; type=&quot;pom&quot; /&gt;
 &lt;/dependency&gt;</pre></div></div>
 <div class="section">
 <h3><a name="Groovy_Grape"></a>Groovy Grape</h3><a name="Groovy_Grape"></a>
 <div class="source">
 <pre>@Grapes(
-@Grab(group='com.craigjperry.canbusexplorer', module='canbusexplorer-integration-tests', version='1.0-SNAPSHOT')
+@Grab(group='com.craigjperry.canbusexplorer', module='canbusexplorer', version='1.0-SNAPSHOT')
 )</pre></div></div>
 <div class="section">
 <h3><a name="Grails"></a>Grails</h3><a name="Grails"></a>
 <div class="source">
-<pre>compile 'com.craigjperry.canbusexplorer:canbusexplorer-integration-tests:1.0-SNAPSHOT'</pre></div></div>
+<pre>compile 'com.craigjperry.canbusexplorer:canbusexplorer:1.0-SNAPSHOT'</pre></div></div>
 <div class="section">
 <h3><a name="Leiningen"></a>Leiningen</h3><a name="Leiningen"></a>
 <div class="source">
-<pre>[com.craigjperry.canbusexplorer/canbusexplorer-integration-tests &quot;1.0-SNAPSHOT&quot;]</pre></div></div>
+<pre>[com.craigjperry.canbusexplorer/canbusexplorer &quot;1.0-SNAPSHOT&quot;]</pre></div></div>
 <div class="section">
 <h3><a name="SBT"></a>SBT</h3><a name="SBT"></a>
 <div class="source">
-<pre>libraryDependencies += &quot;com.craigjperry.canbusexplorer&quot; % &quot;canbusexplorer-integration-tests&quot; % &quot;1.0-SNAPSHOT&quot;</pre></div></div></div>
+<pre>libraryDependencies += &quot;com.craigjperry.canbusexplorer&quot; % &quot;canbusexplorer&quot; % &quot;1.0-SNAPSHOT&quot;</pre></div></div></div>
       </div>
     </div>
     <div class="clear">
