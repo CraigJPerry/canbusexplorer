@@ -8,7 +8,7 @@
 
 	<head>
 		<meta charset="UTF-8" />
-		<title>Canbus Explorer &#x2013; </title>
+		<title>Canbus Explorer &#x2013; Code Architecture</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="" />
 		<meta http-equiv="content-language" content="en" />
@@ -92,7 +92,24 @@
 	<div class="row">
 		<div class="span12">
 			<div class="body-content">
-
+<div class="section"> 
+ <div class="page-header">
+  <h2 id="Code_Architecture">Code Architecture</h2>
+ </div> 
+ <p>The code follows the clean architecture promoted by “Uncle Bob”. Read more about that here: <a class="externalLink" href="http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html">http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html</a></p> 
+</div> 
+<div class="section"> 
+ <h2 id="Maven_Modules">Maven Modules</h2> 
+ <p>The maven modules are split on architectural boundaries. The maven enforcer plugin prevents the introduction of bad dependencies (i.e. inner layers can never depend outwards). Modules may evolve independently therefore API changes should always be backwards compatible.</p> 
+</div> 
+<div class="section"> 
+ <h2 id="Java_Packages">Java Packages</h2> 
+ <p>The java packages are organised by feature. IDEs like IntelliJ IDEA have a “Packages” view in addition to the default “Project” view. By selecting the packages view you will see the feature hierarchy without pollution by the maven module structure.</p> 
+</div> 
+<div class="section"> 
+ <h2 id="Integration_Tests">Integration Tests</h2> 
+ <p>These are treated as a shipable artifact. They document and demonstrate the RESTful web service’s behaviour and so are useful to other integrators.</p> 
+</div>
 			</div>
 		</div>
 	</div>
