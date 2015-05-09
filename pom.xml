@@ -34,6 +34,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <version.canbusexplorer-server>1.0-SNAPSHOT</version.canbusexplorer-server>
         <version.compiler.plugin>3.3</version.compiler.plugin>
@@ -46,6 +47,8 @@
         <version.maven-site-plugin>3.4</version.maven-site-plugin>
         <version.site-maven-plugin>0.11</version.site-maven-plugin>
         <version.doxia-module-markdown>1.6</version.doxia-module-markdown>
+        <version.maven-surefire-failsafe-plugin>2.18.1</version.maven-surefire-failsafe-plugin>
+        <version.build-helper-maven-plugin>1.9.1</version.build-helper-maven-plugin>
 
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
