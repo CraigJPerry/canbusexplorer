@@ -1,0 +1,17 @@
+Canbus Explorer is an HTML5 single page web application. The RESTful web service is written
+in Java 7.
+
+Developer Setup
+---------------
+
+You will need:
+
+* A JDK 1.7 or above
+* Maven 3.x
+* A git client
+* An IDE, although this project will never proscribe a particular choice
+
+Version Control
+---------------
+
+Commit messages follow the [AngularJS style.](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/mobilebasic).
