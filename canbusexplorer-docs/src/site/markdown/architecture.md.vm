@@ -1,0 +1,27 @@
+Code Architecture
+-----------------
+
+The code follows the clean architecture promoted by "Uncle Bob". Read
+more about that here: http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html
+
+Maven Modules
+-------------
+
+The maven modules are split on architectural boundaries. The maven
+enforcer plugin prevents the introduction of bad dependencies (i.e. inner
+layers can never depend outwards). Modules may evolve independently
+therefore API changes should always be backwards compatible.
+
+Java Packages
+-------------
+
+The java packages are organised by feature. IDEs like IntelliJ IDEA
+have a "Packages" view in addition to the default "Project" view. By
+selecting the packages view you will see the feature hierarchy without
+pollution by the maven module structure.
+
+Integration Tests
+-----------------
+
+These are treated as a shipable artifact. They document and demonstrate
+the RESTful web service's behaviour and so are useful to other integrators.

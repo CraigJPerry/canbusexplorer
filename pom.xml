@@ -9,6 +9,29 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <description>A tool to assist in the capture and understanding, of traffic on Canbus networks.</description>
+    <url>https://github.com/CraigJPerry/canbusexplorer</url>
+    <inceptionYear>2015</inceptionYear>
+    <licenses>
+        <license>
+            <name>GNU General Public License (GPL)</name>
+            <url>http://www.gnu.org/licenses/gpl.html</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>CraigJPerry</id>
+            <name>Craig J Perry</name>
+            <email>craigp84@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/CraigJPerry/canbusexplorer.git</connection>
+        <developerConnection>scm:git:git@github.com/CraigJPerry/canbusexplorer.git</developerConnection>
+    </scm>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -20,14 +43,20 @@
         <version.springboot>1.2.3.RELEASE</version.springboot>
         <version.selenium>2.45.0</version.selenium>
         <version.fluentlenium>0.10.3</version.fluentlenium>
+        <version.maven-site-plugin>3.4</version.maven-site-plugin>
+        <version.site-maven-plugin>0.11</version.site-maven-plugin>
+        <version.doxia-module-markdown>1.6</version.doxia-module-markdown>
 
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
+
+        <github.global.server>github</github.global.server>
     </properties>
 
     <modules>
         <module>canbusexplorer-integration-tests</module>
         <module>canbusexplorer-server</module>
+        <module>canbusexplorer-docs</module>
     </modules>
 
     <dependencyManagement>
@@ -37,6 +66,7 @@
                 <artifactId>canbusexplorer-server</artifactId>
                 <version>${version.canbusexplorer-server}</version>
             </dependency>
+
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
@@ -106,11 +136,6 @@
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${version.springboot}</version>
             </plugin>
         </plugins>
     </build>
