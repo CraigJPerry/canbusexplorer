@@ -1,0 +1,6 @@
+How To Guide
+------------
+
+* Download `canbusexplorer.jar`
+* From a command window run `java -jar canbusexplorer.jar`
+* Visit the announced URL http://localhost:8080/
