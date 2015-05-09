@@ -1,4 +1,21 @@
-Markdown Maven Site
-===================
+Canbus Explorer
+---------------
 
-Generated the web site for ${project.groupId}:${project.artifactId}:${project.version}.
+> Capture and understand the traffic on Canbus networks.
+
+See the [How To Guide](guide.html) or [Deployment](deployment.html).
+
+To contribute, check out the [Hacking](hacking.html) and [Architecture Notes](architecture.html) pages.
+
+---
+
+**Hardware Links:**
+
+* [ELM327 Datasheet](http://elmelectronics.com/DSheets/ELM327DS.pdf)
+* [ST1170 Chip](http://www.obdsol.com/solutions/chips/stn1170/)
+
+**Social Links:**
+
+* Github: [CraigJPerry/canbusexplorer](https://github.com/CraigJPerry/canbusexplorer)
+* Tweet: [#CanbusExplorer](https://twitter.com/intent/tweet?button_hashtag=CanbusExplorer)
+* Author: [@CraigJPerry](https://twitter.com/intent/follow?screen_name=CraigJPerry)

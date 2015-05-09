@@ -13,5 +13,31 @@
         <links>
             <item name="CraigJPerry@GitHub" href="https://www.github.com/CraigJPerry"/>
         </links>
+        <menu name="User Documentation">
+            <item name="Introduction" href="index.html"/>
+            <item name="How To Guide" href="guide.html"/>
+        </menu>
+        <menu name="Developer Documentation">
+            <item name="Hacking" href="hacking.html"/>
+            <item name="Architecture Notes" href="architecture.html"/>
+        </menu>
+        <menu name="SysAdmin Documentation">
+            <item name="Deployment" href="deployment.html"/>
+        </menu>
     </body>
+    <custom>
+        <reflowSkin>
+            <theme>bootswatch-united</theme>
+            <skinAttribution>false</skinAttribution>
+            <highlightJs>true</highlightJs>
+            <pages>
+                <index>
+                    <sections>
+                        <body/>
+                        <sidebar/>
+                    </sections>
+                </index>
+            </pages>
+        </reflowSkin>
+    </custom>
 </project>
