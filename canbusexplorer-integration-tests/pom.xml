@@ -78,6 +78,10 @@
                     <includes>
                         <include>**/*Test*</include>
                     </includes>
+                    <systemProperties>
+                        <!--suppress MavenModelInspection -->
+                        <cucumber.options>--tags ~@serialDongleAvailable --tags ~@wifiDongleAvailable</cucumber.options>
+                    </systemProperties>
                 </configuration>
                 <executions>
                     <execution>
